@@ -11,6 +11,7 @@ declare module "react-native-user-avatar" {
         colors?: string[];
         size?: number;
         style?: ViewStyle;
+        component?: Component;
     }
 
     class UserAvatar extends Component<IProps, {}> {
