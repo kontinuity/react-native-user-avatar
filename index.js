@@ -35,7 +35,8 @@ class UserAvatar extends Component {
       size,
       style,
       defaultName,
-      radius = 0.5
+      radius = 0.5,
+      icon
     } = this.props;
 
     if (!fontDecrease) fontDecrease = 2.5;
@@ -89,8 +90,11 @@ class UserAvatar extends Component {
       }
 
       innerStyle.backgroundColor = background;
-
-      inner = <Text style={{ fontSize: size / fontDecrease, color: textColor }}>{abbr}</Text>
+        if (icon) {
+            inner = icon;
+        } else {
+            inner = <Text style={{fontSize: size / fontDecrease, color: textColor}}>{abbr}</Text>
+        }
     }
 
     return (
