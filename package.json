@@ -15,5 +15,9 @@
   "dependencies": {
     "contrast": "^1.0.1",
     "initials": "^2.1.5"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.20",
+    "@types/react-native": "0.44.14"
   }
 }

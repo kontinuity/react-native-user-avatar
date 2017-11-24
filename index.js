@@ -94,11 +94,9 @@ class UserAvatar extends Component {
     }
 
     return (
-      <View>
         <View style={[innerStyle, style]}>
           {inner}
         </View>
-      </View>
     )
   }
 }
