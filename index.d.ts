@@ -13,6 +13,7 @@ declare module "react-native-user-avatar" {
         style?: ViewStyle;
         component?: JSX.Element;
         icon?: JSX.Element;
+        onPress?: () => void;
     }
 
     class UserAvatar extends Component<IProps, {}> {
