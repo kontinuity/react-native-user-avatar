@@ -48,6 +48,7 @@ class UserAvatar extends Component {
 
         let abbr = initials(name);
         if (!abbr) abbr = defaultName;
+        abbr = abbr.substring(0, 2)
 
         if (isNaN(radius)) radius = 0.5
 
